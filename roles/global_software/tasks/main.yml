@@ -25,3 +25,15 @@ tasks:
       apt:
          package: tmux
          state: present
+    - name: add lynis
+      apt:
+         package: lynis
+         state: present
+    - name: add fail2ban
+      apt:
+         package: fail2ban
+         state: present
+    - name: add debian-goodies
+      apt:
+          package: debian-goodies
+         state: present
