@@ -1,38 +1,28 @@
 ---
 # tasks file for global_software
-- name: add vim
+
+- name: Upgrade all packages to the latest version
   apt:
-     package: vim
-     state: present
-- name: add htop
+    name: "*"
+    state: latest
+
+- name: Update all packages to the latest version
   apt:
-     package: htop
-     state: present
-- name: add python-pip
-  apt:
-     package: python-pip
-     state: present
-- name: add python3-pip
-  apt:
-     package: python3-pip
-     state: present
-- name: add git
-  apt:
-     package: git
-     state: present
-- name: add tmux
-  apt:
-     package: tmux
-     state: present
-- name: add lynis
-  apt:
-     package: lynis
-     state: present
-- name: add fail2ban
-  apt:
-     package: fail2ban
-     state: present
-- name: add debian-goodies
-  apt:
-     package: debian-goodies
-     state: present
+    upgrade: dist
+
+- name: add all the packages
+  apt: name={{ item }} state=present
+  with_items:
+       - zip
+       - unzip
+       - wget
+       - bash-completion
+       - debian-goodies
+       - fail2ban
+       - lynis
+       - tmux
+       - git
+       - python3-pip
+       - python-pip
+       - htop
+       - vim

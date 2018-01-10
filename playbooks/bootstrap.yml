@@ -1,11 +1,7 @@
 ---
-- hosts: localhost
+- hosts: all
   become: true
   roles:
-      - global_software
-      - sudoers
-      - sshd
-      - desktop
-      - post_desktop
+      - roles/global_software
   tasks:
 
