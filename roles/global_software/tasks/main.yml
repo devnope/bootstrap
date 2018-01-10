@@ -1,39 +1,38 @@
 ---
 # tasks file for global_software
-tasks:
-    - name: add vim
-      apt:
-         package: vim
-         state: present
-    - name: add htop
-      apt:
-         package: htop
-         state: present
-    - name: add python-pip
-      apt:
-         package: python-pip
-         state: present
-    - name: add python3-pip
-      apt:
-         package: python3-pip
-         state: present
-    - name: add git
-      apt:
-         package: git
-         state: present
-    - name: add tmux
-      apt:
-         package: tmux
-         state: present
-    - name: add lynis
-      apt:
-         package: lynis
-         state: present
-    - name: add fail2ban
-      apt:
-         package: fail2ban
-         state: present
-    - name: add debian-goodies
-      apt:
-          package: debian-goodies
-         state: present
+- name: add vim
+  apt:
+     package: vim
+     state: present
+- name: add htop
+  apt:
+     package: htop
+     state: present
+- name: add python-pip
+  apt:
+     package: python-pip
+     state: present
+- name: add python3-pip
+  apt:
+     package: python3-pip
+     state: present
+- name: add git
+  apt:
+     package: git
+     state: present
+- name: add tmux
+  apt:
+     package: tmux
+     state: present
+- name: add lynis
+  apt:
+     package: lynis
+     state: present
+- name: add fail2ban
+  apt:
+     package: fail2ban
+     state: present
+- name: add debian-goodies
+  apt:
+     package: debian-goodies
+     state: present
