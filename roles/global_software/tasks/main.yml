@@ -26,3 +26,5 @@
        - python-pip
        - htop
        - vim
+       - net-tools
+       - dns-utils
