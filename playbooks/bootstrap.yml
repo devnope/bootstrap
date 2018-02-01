@@ -3,5 +3,6 @@
   become: true
   roles:
       - roles/global_software
+      - roles/desktop
   tasks:
 
