@@ -1,17 +1,17 @@
 ---
 # tasks file for global_software
 
-- name: Upgrade all packages to the latest version
-  apt:
-    name: "*"
-    state: latest
+#- name: Upgrade all packages to the latest version
+#  apt:
+#    name: "*"
+#    state: latest
 
-- name: Update all packages to the latest version
-  apt:
-    upgrade: dist
+#- name: Update all packages to the latest version
+#  apt:
+#    upgrade: dist
 
 - name: add all the packages
-  apt: name={{ item }} state=present
+  package: name={{ item }} state=present
   with_items:
        - zip
        - unzip
