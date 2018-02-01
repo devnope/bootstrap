@@ -11,4 +11,6 @@ _debian based_
   + install xfce and xfce-whisker-plugin ( roles/desktop/tasks/main.yml ) - poorly tested
 
 **HowTo**
-	'ansible-playbook playbooks/bootstrap.yml'
+
+	`aptitude install ansible git`
+	`ansible-playbook playbooks/bootstrap.yml`
