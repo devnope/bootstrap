@@ -1,0 +1,6 @@
+---
+# tasks file for config_management
+- name: install ansible
+  package: package=ansible state=present
+- name: install ansible-lint
+  pip: name=ansible-lint state=present

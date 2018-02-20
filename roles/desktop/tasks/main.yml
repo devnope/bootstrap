@@ -1,12 +1,7 @@
 ---
 # tasks file for desktop
 - tasks:
-    - name: xfce-desktop
-      package:
-        - package: xfce4-desktop
-          state: present
-    - name: xfce4-whisker
-      package:
-        - package: xfce4-whiskermenu-plugin
-      
-
+     - name: xfce-desktop
+       package: packager=xfce4-desktop state=present
+     - name: xfce4-whisker
+       package: package=xfce4-whiskermenu-plugin state=present

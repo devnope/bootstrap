@@ -1,2 +1,11 @@
 ---
 # tasks file for post_desktop
+- name: add vim plugins
+  package: name={{ item }} state=present
+  with_items:
+      - vim-vimoutliner
+      - vim-tabular
+      - vim-ctrlp
+      - vim-addon-manager
+- name: install yamllint
+  package: name=yamllint state=present

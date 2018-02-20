@@ -3,6 +3,7 @@
   become: true
   roles:
       - roles/global_software
-      - roles/desktop
+      - roles/config_management
+        #      - roles/desktop
+      - roles/post_desktop
   tasks:
-
