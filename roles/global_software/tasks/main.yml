@@ -8,7 +8,7 @@
        - debian-goodies
        - dnsutils
        - fail2ban
-       - git
+       - git-full
        - htop
        - lynis
        - net-tools
