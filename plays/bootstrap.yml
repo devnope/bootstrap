@@ -6,4 +6,4 @@
       - roles/global_software
       - roles/config_management
         #      - roles/desktop
-        #      - roles/post_desktop
+      - roles/post_desktop
