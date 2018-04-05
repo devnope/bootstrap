@@ -1,6 +1,14 @@
 ---
 # tasks file for config_management
 - name: install ansible
-  package: package=ansible state=present
+  package:
+    package: ansible
+    state: present
 - name: install ansible-lint
-  pip: name=ansible-lint state=present
+  pip:
+    name: ansible-lint
+    state: present
+- name: install sysstat
+  package:
+    name: sysstat
+    state: present

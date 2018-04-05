@@ -3,6 +3,10 @@
 - name: add vim plugins
   package: name={{ item }} state=present
   with_items:
+      - markdown
+      - grip
+      - ranger
+      - xdotool
       - vim-vimoutliner
       - vim-tabular
       - vim-ctrlp

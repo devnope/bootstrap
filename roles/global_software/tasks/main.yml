@@ -5,10 +5,10 @@
   package: name={{ item }} state=present
   with_items:
        - bash-completion
-       - debian-goodies
+       - coreutils
        - dnsutils
        - fail2ban
-       - git-full
+       - git
        - htop
        - lynis
        - net-tools
@@ -21,3 +21,9 @@
        - vim
        - wget
        - zip
+- name: instal debian based stuff
+  package: name={{ item }} state=present
+  with_items:
+       - debian-goodies
+       - aptitude
+  when: ansible_os_family == 'Debian'
